@@ -5,19 +5,15 @@
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
     </head>
     <body>
+        
+        <script src="conversions.js"></script>
+        
 	<h1> Consumption Converter</h1>
-            <form name="inputform">
-		Input: <input type="text" id="input" name="input" value=""/>
-            </form>
-            <form>
-		<input type="submit" name="kpltompg" value="Convert to MPG" onclick="kpltompg()">
-            </form>
-            <form>
-		<input type="submit" name="mpgtokpl" value="Convert to KPL" onclick="mpgtokpl()">
-            </form>
-            <form name="outputform">
-		Solution: <input type="text" id="output" name="result" value=""/>
+            <form name=inputform>
+		Input: <input type="text" name="input" id="input" value=""/><br>
+		<input type="button" name="kpl2mpg" value="Convert to MPG" onclick="JavaScript:kpltompg()">
+		<input type="button" name="mpg2kpl" value="Convert to KPL" onclick="JavaScript:mpgtokpl()"><br>
+		Solution: <input type="text" name="result" id="output" value=""/>
             </form>
             
-        <script src="conversions.js"></script>
 </html>

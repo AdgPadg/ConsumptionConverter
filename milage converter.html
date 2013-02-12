@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+	<title> Milage converter </title>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <script>
+		var input = document.getElementById("input");
+		var result;
+
+
+		//onclick "convert to KPL" = mpgtokpl(input)
+
+		function mpgtokpl(){
+			var result = inputform * 0.4251;
+			document.outputform.result.value = output.toFixed(3);
+		}
+
+		//onclick "convert to MPG" = mpgtokpl(input);
+		function kpltompg(){
+			var result = input * 2.352;
+			document.output.result.value = output.toFixed(3);
+		}
+	</script>
+	</head>
+<body>
+	<h1> Milage Converter</h1>
+	
+		<form>
+			Input: <input type="text" id="input" name="input"
+			input type="submit" value=""/>
+		</form>
+		<form>
+			<input type="submit" name="kpltompg" value="Convert to MPG" onclick="kpltompg()">
+		</form>
+		<form>
+			<input type="submit" name="mpgtokpl" value="Convert to KPL" onclick="mpgtokpl()">
+		</form>
+		<form>
+			Solution: <input type="text" name="output" value="result"
+			output type="result" ></input>
+		</form>
+</html>
